@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+
+        <title>{% for d in data %} {{d.strMeal}} {% endfor %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+      <style type="text/css">
+           body {
+        background: url(https://i.imgur.com/ePYJn6n.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        color: gray;
+      }
+      h1 {
+        padding-bottom: 30px;
+        background: rgba(0, 0, 0, 0.3);
+      }
+       button {
+
+         background-color: #FFD800;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+            }
+
+       button:hover {
+         opacity: 0.8;
+        }
+      .navbar-inverse {
+        background: red;
+      }
+
+      h4 {
+        padding-bottom: 30px;
+        padding-top: 20px;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .btn-block {
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .col-lg-6 {
+        padding-bottom: 20px;
+      }
+
+      .sample{
+        color: maroon;
+      }
+
+      .sample1{
+        color: #ffc266;
+      }
+        .div1 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid blue;
+}
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .center {
+        width: 800px;
+    }
+
+      .right {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        border: 3px solid red;
+        padding: 10px;
+        }
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: red;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: darkred;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+      </style>
+    <meta charset="UTF-8">
+    <title>{% for d in data %} {{d.strMeal}} {% endfor %}</title>
+</head>
+
+
+
+<body>
+<h1 class="text-center sample">
+    Enjoy your {% for d in data %} {{d.strMeal}} {% endfor %}
+</h1>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src=" https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+
+
+</body>
+    <br>
+
+
+<div class="container">
+    <div class="center">
+
+        <h4>Name</h4>
+        <p>{% for d in data %} {{d.strMeal}} {% endfor %}</p>
+        <br>
+        <h4>Category</h4>
+        <p>{% for d in data %} {{d.strCategory}} {% endfor %}</p>
+        <br>
+        <h4>Cuisine</h4>
+        <p>{% for d in data %} {{d.strArea}} {% endfor %}</p>
+        <br>
+        <img src="{% for d in data %} {{d.strMealThumb}} {% endfor %}">
+        <br>
+        <h4>Ingredients</h4>
+        <p>{% for d in data %} {{d.strIngredient1}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient2}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient3}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient4}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient5}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient6}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient7}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient8}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient9}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient10}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient11}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient12}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient13}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient14}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient15}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient16}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient17}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient18}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient19}} {% endfor %}</p>
+        <p>{% for d in data %} {{d.strIngredient20}} {% endfor %}</p>
+        <br>
+        <h4>Instructions</h4>
+        <p>{% for d in data %} {{d.strInstructions}} {% endfor %}</p>
+        <br>
+        <h4>Preferred Beverage</h4>
+        <p>{% for d in data %} {{d.strDrinkAlternate}} {% endfor %}</p>
+        <br>
+        <a href="{% for d in data %} {{d.strYoutube}} {% endfor %}">Click here for a video Tutorial</a>
+    </div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+function openTab(evt, tabName){
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function my_func() {
+     window.location.reload();
+}
+
+</script>
+</html>
