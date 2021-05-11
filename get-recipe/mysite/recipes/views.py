@@ -22,7 +22,7 @@ def search(request):
             context = {
                 'data': data
             }
-            return render(request, 'recipes/search.html')
+            return render(request, 'recipes/search.html',context)
 
     else:
         return render(request, 'recipes/search.html')
